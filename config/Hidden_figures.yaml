@@ -1,0 +1,48 @@
+test_cfg:
+  alpha: 1
+  batch_size: 256
+  data_list:
+  - Hidden_Figures
+  dataset: ABFST
+  dis_coef: 0.2
+  dropout: 0.3
+  generation_weight: 0.3
+  init_dis: 0.7
+  model: MAGNET
+  Mn_epochs: 10
+  neg_weight: 6
+  nface_track: 8
+  num_generations: 2
+  thre: 0.91
+  nvoice_track: 8
+  pface_cap: 8
+  verbose: false
+  with_back: true
+train_cfg:
+  LR: 0.001
+  alpha: 1
+  batch_size: 256
+  data_list:
+  - About_Last_Night
+  - Buffy
+  - Friends
+  - Sherlock
+  - TBBT
+  dataset: ABFST
+  dis_coef: 0.2
+  dropout: 0.3
+  exp_id: 1
+  gamma: 0.1
+  generation_weight: 0.3
+  init_dis: 0.7
+  model: MAGNET
+  n_epochs: 10
+  neg_weight: 6
+  nface_track: 8
+  num_generations: 2
+  nvoice_track: 8
+  pface_cap: 8
+  seed: 8
+  step_size: 4
+  verbose: false
+  with_back: true
